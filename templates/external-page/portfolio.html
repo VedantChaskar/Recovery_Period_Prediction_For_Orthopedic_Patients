@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Player Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+ <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+<link rel="stylesheet" type="text/css" href="../static/css/selection.css">
+</head>
+<body>
+  
+<header>
+  <div class="container-fluid top-nav">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="google_translate_element"  ></div>
+      </div>
+      <div class="col-sm-4">
+        <ul class="login-icon">
+          <li style="border-right: 2px solid white"><a href="" ><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+                    <li><a href="" ><span class="fa fa-edit">&nbspRegister</span></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  
+  <div class="container" >
+    <div class="row">
+      
+      <div class="col-sm-6">
+                <a href="index.html">
+                  <div>
+                    <h4 style="margin-top: 15px">Recovery Period Prediction For Orthopedic Patients</h1>
+                        <p>
+                            Vedant Chaskar<br>
+                            Suyash Shelar<br>
+                            Archa Jadhav
+                        </p>
+        
+                </div>
+                </a>
+            </div>
+      
+      
+    </div>
+  </div>
+
+  <nav>
+    <div class="container-fluid main_navbar" id="nav">
+    
+        <ul class="main-icons">
+            <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+            </ul>
+
+    </div>
+  </nav>
+</header>
+<div style="height: 30px;"></div>
+
+
+
+
+
+<div class="main">
+  <div class="container" id="Cricket" ><br>
+  <div class="row ">
+    <div class="column">
+                <div class="card">
+                    <img height="300px" width="220px" src="static/images/Doctor1.jpg" >
+                  <h3><b><center>Dr. Rajesh Malhotra</b></h3>
+                  <p><b>Speciality: </b>Joint Replacement Surgery
+                  
+                </div>
+                </div>
+     <div class="column">
+                <div class="card" >
+                    <img height="300px" width="220px" src="static/images/Doctor2.jpg" >
+                    <h3><b><center>Dr. Ashok Rajgopal</b></h3>
+                      <p><b>Speciality: </b>Knee Replacement Surgery
+                </div>
+                </div>
+      <div class="column">
+                <div class="card">
+                    <img height="300px" width="220px" src="static/images/Doctor3.jpg" >
+                    <h3><b><center>Dr. Arvind Kulkarni</b></h3>
+                      <p><b>Speciality: </b>Spine Surgery
+                </div>
+                </div>
+      <div class="column">
+                <div class="card">
+                    <img height="300px" width="220px" src="static/images/Doctor4.jpg" >
+                    <h3><b><center>Dr. Shekhar Agarwal</b></h3>
+                      <p><b>Speciality: </b>Joint Replacement Surgery
+                </div>
+                </div>
+
+   
+              </div><br>
+    <div class="row ">
+    <div class="column">
+                <div class="card">
+                    <img height="300px" width="220px" src="static/images/Doctor5.jpg">
+                    <h3><b><center>Dr. Alok Sud</b></h3>
+                      <p><b>Speciality: </b>Sports Injuries
+                </div>
+                </div>
+     <div class="column">
+                <div class="card" >
+                    <img height="300px" width="220px" src="static/images/Doctor6.jpg">
+                    <h3><b><center>Dr. Ramneek Mahajan</b></h3>
+                      <p><b>Speciality: </b>Joint Replacement Surgery
+                </div>
+                </div>
+      <div class="column">
+                <div class="card">
+                    <img height="300px" width="220px" src="static/images/Doctor8.jpg">
+                    <h3><b><center>Dr. Sanjay Desai</b></h3>
+                      <p><b>Speciality: </b>Knee Surgery
+                </div>
+                </div>
+      <div class="column">
+                <div class="card" >
+                    <img height="300px" width="220px" src="static/images/Doctor9.jpg">
+                    <h3><b><center>Dr. Raju Vaishya</b></h3>
+                      <p><b>Speciality: </b>Pediatric Orthopedics
+                </div>
+                </div>
+
+   
+              </div>
+   
+</body>
+<script type="text/javascript">
+   var nav = document.getElementById('nav');
+
+       window.onscroll = function () {
+
+         if(window.pageYOffset > 100){
+
+          nav.style.position = "fixed";
+          nav.style.top = 0;
+
+          }else{
+            // nav.style.position = "absolute";
+            nav.style.position = 'relative'; //fixed
+            nav.style.top = 100;
+          }
+       }
+
+
+</script>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

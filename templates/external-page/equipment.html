@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block nav1 %}
+<div class="container-fluid top-nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="google_translate_element"></div>
+			</div>
+			
+			<div class="col-sm-4">
+				<ul class="login-icon">
+					<li style="border-right: 2px solid white">
+						<a href="{{ url_for('signin') }}"><span class="fa fa-sign-in">&nbspLogin</span></a-->
+					</li>
+					<li>
+						<a href="{{ url_for('signup') }}"><span class="fa fa-edit">&nbspEquipments</span></a-->
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block nav4 %}
+<nav>
+	<div class="container-fluid main_navbar">
+		<div class="row">
+        <ul class="main-icons">
+            <li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+          </ul>
+		</div>
+
+	</div>
+</nav>
+{% endblock %}
+
+{% block containt %}
+<div style="height: 30px;"></div>
+<div class="container">
+    <div class="row " id="cricket">
+                 
+              <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment1.jpg">
+                  <h3><b>Compression Stockings</b></h3>
+                  <p>These are special stockings designed to improve blood flow and prevent swelling in the legs. They are often used to treat conditions such as deep vein thrombosis (DVT), varicose veins, and lymphedema.</p>
+                  <a href="https://www.amazon.in/Microfiber-Superior-Compression-Stockings-Eco-Friendly/dp/B078R4KS2M/ref=sr_1_6?crid=WOM9BPZJ09W8&keywords=compression%2Bstockings&qid=1681327845&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=compressiion%2Bstock%2Caps%2C194&sr=8-6&th=1" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment2.jpg">
+                  <h3><b>Ankle-foot Orthoses (AFOs)</b></h3>
+                  These are braces worn around the ankle and foot to support and control foot movement. AFOs can be used to treat conditions such as drop foot, cerebral palsy, and multiple sclerosis.
+                  <a href="https://www.amazon.in/%C3%96ssur-Foot-Up%C2%AE-Ankle-Foot-Orthoses-shoeless/dp/B0040OFCIW/ref=sr_1_5?crid=1HUF6IERS2DNJ&keywords=Ankle-foot+orthoses&qid=1681328088&sprefix=ankle-foot+orthoses+%2Caps%2C176&sr=8-5" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+
+              
+              <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment3.jpg">
+                  <h3><b>Cervical Collar</b></h3>
+                  <p>These are devices worn around the neck to support and immobilize the neck after an injury or surgery. They can be used to treat conditions such as whiplash, cervical fractures, and cervical disc herniation.</p> 
+                 <a href="https://www.amazon.in/Tynor-Soft-Cervical-Collar-Support/dp/B00I5KHRM6/ref=sr_1_5?keywords=cervical%2Bcollar&qid=1681328325&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=cervical%2Bc%2Caps%2C197&sr=8-5&th=1" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment4.jpg">
+                  <h3><b>Hand and Wrist Splints</b></h3>
+                  <p>These are braces worn on the hand and wrist to provide support and stability. They can be used to treat conditions such as carpal tunnel syndrome, wrist fractures, and arthritis.</p>
+                  <a href="https://www.amazon.in/Tynor-Wrist-Forearm-Splint-Large/dp/B00L27RCHE/ref=sr_1_5?crid=D9TN521O2IND&keywords=hand%2Band%2Bwrist%2Bsplint&qid=1681328432&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=hand%2Band%2Bwrist%2Bsplint%2Caps%2C192&sr=8-5&th=1" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+
+
+
+
+            
+                
+
+    </div>
+
+     <div class="row" style="margin-top: 30px">
+        <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment5.jpg">
+                  <h3><b>TENS units</b></h3>
+                  <p>A TENS (Transcutaneous Electrical Nerve Stimulation) unit is a small, portable device that uses electrical impulses to help alleviate pain by stimulating the nerves and reducing the transmission of pain signals to the brain.</p>
+                  <a href="https://www.amazon.in/UltraCare-PRO-Rechargeable-Physiotherapy-Stimulation/dp/B08KY7XWJZ/ref=sr_1_4?crid=Z64AAW5SXV2Y&keywords=TENS%2Bunit&qid=1681328600&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=tens%2Bunit%2Caps%2C207&sr=8-4&th=1" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+
+
+               <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment6.jpg">
+                  <h3><b>Spinal braces</b></h3>
+                  <p>These are devices worn around the torso to support and immobilize the spine. They can be used to treat conditions such as scoliosis, spinal fractures, and spinal cord injuries.</p>
+                  <a href="https://www.amazon.in/HAKAN-Taylors-Brace-Immobilization-Size-Universal/dp/B09C1Q4LFR/ref=sr_1_14?keywords=spine+braces&qid=1681328749&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=spine+bracw%2Caps%2C193&sr=8-14" class="btn btn-primary" style="margin-top: 8px">Buy</a>
+                </div>
+              </div>
+
+              
+              <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment7.jpg">
+                  <h3><b>Orthopedic Pillows and Cushions</b></h3>
+                  These are special pillows and cushions designed to provide support and comfort to patients with orthopedic conditions. They can be used to treat conditions such as lower back pain, neck pain, and hip pain.
+                  <a href="https://www.amazon.in/Rylan-Orthopedic-Cervical-Contour-Support/dp/B0BR445CJC/ref=sr_1_5?crid=2GUVGUVRBQ353&keywords=orthopedic%2Bpillow&qid=1681328912&refinements=p_72%3A1318476031&rnid=1318475031&sprefix=orthope%2Caps%2C193&sr=8-5&th=1" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                    <img height="250px" width="220px" src="static/images/equipment8.jpg">
+                  <h3><b>Electrotherapy Machines</b></h3>
+                  These are devices that use electrical stimulation to reduce pain and promote healing. They can be used to treat a wide range of orthopedic conditions, such as tendonitis, bursitis, and muscle strains.
+                  <a href="https://www.amazon.in/Physiogears-Combination-Programs-Computerized-Warranty/dp/B07FRJD7YW/ref=sr_1_8?keywords=electrotherapy+machine&qid=1681328997&sprefix=electrotherapy+mach%2Caps%2C190&sr=8-8" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+         
+
+     </div>
+</div>
+{% endblock %}

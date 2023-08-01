@@ -1,0 +1,230 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+
+{% block nav1 %}
+<div class="container-fluid top-nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="google_translate_element"></div>
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<ul class="login-icon">
+					<li style="border-right: 2px solid white">
+						<a href="{{ url_for('signin') }}"><span class="fa fa-sign-in">&nbspLogin</span></a-->
+					</li>
+					<li>
+						<a href="{{ url_for('signup') }}"><span class="fa fa-edit">&nbspRegister</span></a-->
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block nav4 %}
+<nav>
+	<div class="container-fluid main_navbar" id="nav">
+		<div class="row">
+			<ul class="main-icons">
+				<li class="active"><a href="{{ url_for('academy') }}">Top Hospitals</a></li>
+				<li><a href="{{ url_for('job') }}">Job Vacancies</a></li>
+				<li><a href="{{ url_for('equipment') }}">Medical Equipment</a></li>
+				<li><a href="{{ url_for('injury_remedies') }}">Injuries Remedies</a></li>
+				<li><a href="{{ url_for('portfolio') }}">Top Doctors In India</a></li>
+				<li><a href="{{ url_for('onlinecoaching') }}">Patient Rehabilitation</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+{% endblock %}
+
+<!--carusel-->
+{% block containt %}
+<div class="container-fluid" style="background-color: black">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="overlay"></div>
+				<img class="d-block w-100 " src="static/images/ortho2.jpg" alt="First slide">
+
+				<div class="carousel-caption d-none d-md-block" style="color: white">
+					<h2>The greatest wealth is health.</h4>
+						<p>- Virgil</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="overlay"></div>
+				<img class="d-block w-100 " src="static/images/ortho3.jpg" alt="Second slide">
+				<div class="carousel-caption d-none d-md-block">
+
+					<h3>Take care of your body. It's the only place you have to live.</h5>
+						<p>- Jim Rohn</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="overlay"></div>
+				<img class="d-block w-100 " src="static/images/ortho1.jpg" alt="Third slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>A healthy outside starts from the inside."</h5>
+						<p>- Robert Urich</p>
+
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>
+<!--side navbar-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3" style="margin-top:30px">
+			<div class="row">
+
+				<ul  class="vertical-icons">
+					<li style="background-color:#33b0c2"></li>
+					<li><a href="{{ url_for('injury_recovery') }}">Injury Recovery</a></li>
+				</ul>
+
+			</div>
+			<div class="row">
+				<ul class="vertical-icons">
+
+				<li style="background-color:#33b0c2"></li>
+				<li class="active"><a href="{{ url_for('academy') }}">Top Hospitals</a></li>
+				<li><a href="{{ url_for('job') }}">Job Vacancies</a></li>
+				<li><a href="{{ url_for('equipment') }}">Medical Equipment</a></li>
+				<li><a href="{{ url_for('injury_remedies') }}">Injuries Remedies</a></li>
+				<li><a href="{{ url_for('portfolio') }}">Top Doctors In India</a></li>
+				<li><a href="{{ url_for('onlinecoaching') }}">Patient Rehabilitation</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col" style="margin:30px;background: url(images);">
+			<h4>About Our Project</h4>
+			<p style="text-align: justify;">
+				Orthopaedic injury recovery prediction application is a cutting-edge software tool that leverages advanced algorithms to predict the expected recovery time for patients who have suffered orthopaedic injuries. This application has been developed by integrating machine learning models with clinical data, such as age, injury severity, medical history, and treatment protocols, to provide highly accurate predictions on the expected recovery time for individual patients.
+
+				By using this application, healthcare professionals, including physicians and physical therapists, can set realistic expectations for their patients, plan treatment regimens, and make informed decisions about returning to work or sports activities. The application can be tailored to the unique needs of individual patients, providing personalized care that is essential for optimizing recovery outcomes.
+				
+				Moreover, the use of this application can result in improved resource allocation, which is especially critical in today's healthcare landscape. By accurately predicting recovery times, physicians can better allocate resources and optimize patient care, resulting in improved patient outcomes and reduced costs.
+				
+				In conclusion, orthopaedic injury recovery prediction application is an innovative and invaluable tool that has the potential to revolutionize the field of orthopaedics. By providing accurate and personalized predictions on recovery times, this application has the power to improve patient outcomes, reduce costs, and enhance overall healthcare efficiency.
+				
+			</p>
+		</div>
+		
+
+
+
+	</div>
+</div>
+<!--graph-->
+<!--<div class="container-fluid" style="">
+	<center>
+		<h3 style="text-decoration: underline;"> Analysis of Women Particiaption</h>
+	</center>
+	<div class="row" style="margin-top: 20px">
+		<div class="col-sm-5">
+			<div id="piechart" style="margin-left: 100px"></div>
+		</div>
+		<div class="col-sm-2">
+			<div>
+				<h2 align="center" style="margin-top: 60px">Moving Every Possible <br>Step <br>Ahead...</h2>
+			</div>
+		</div>
+		<div class="col-sm-5">
+			<div id="chartContainer" style="height: 250px;width: 400px; margin-top: 60px;margin-left: 50px"></div>
+
+		</div>
+
+	</div>
+
+
+
+</div> -->
+<!--testimonial-->
+
+<!--
+<div class="container-fluid" style="">
+
+	<center>
+		<h3 style="text-decoration: underline;">Testimonials</h4>
+	</center><br><br>
+	<div class="row" style="border-bottom: 2px solid black">
+		<div class="col-sm-2">
+
+			<img src="static/images/quote.png" style="width: 100px;height: 80px" align="right">
+		</div>
+		<div class="col-sm-8" style="border-right: 2px solid black">
+			<p style="text-align: justify;">
+				Sports is an extremely important component for the overall development of our nation. India, in the last few years
+				has made steady progress in the field of sports. This tremendous potential needs to be showcased at a global
+				platform. It’s time we inspire young talent, give them top-notch infrastructure and training of the highest level.
+				We need to inculcate a strong spirit of participation in sports that enables players to demonstrate their true
+				potential.
+
+			</p>
+
+			<p align="right"><b>Mahendra Singh Dhoni</b> <br> <img src="static/images/flag.png" style="width: 30px;height: 20px;">&nbspMember
+				Team India</p>
+
+
+
+		</div>
+
+		<div class="col-sm-2">
+
+			<img src="static/images/dhoni.png" style="width: 200px;height: 150px;margin-top: 30px" align="left">
+		</div>
+	</div>
+</div> -->
+{% endblock %}
+
+
+
+{% block script %}
+<script src="static/javascript/graph.js"></script>
+<script type="text/javascript">
+	// Load google charts
+	google.charts.load('current', { 'packages': ['corechart'] });
+	google.charts.setOnLoadCallback(drawChart);
+
+	// Draw the chart and set the chart values
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Participation in Sports', ''],
+			['Women', 10950],
+			['Men', 35760],
+
+		]);
+
+		// Optional; add a title and set the width and height of the chart
+		var options = { 'title': 'Women Power in Sports', 'width': 550, 'height': 400 };
+
+		// Display the chart inside the <div> element with id="piechart"
+		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		chart.draw(data, options);
+	}
+</script>
+{% endblock %}

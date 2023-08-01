@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+	<style type="text/css">
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+
+			top: 10;
+			left: 0;
+			overflow-x: hidden;
+			padding-left: 50px;
+
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: black;
+		}
+
+		.main {
+			margin-left: 200px;
+			/* Same as the width of the sidenav */
+			position: absolute;
+			z-index: -1;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+
+		.wrapper {
+			box-shadow: 1px 1px 1px 1px;
+			margin-top: 10px;
+			padding: 10px;
+
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+	</style>
+	<script type="text/javascript" src="js/graph.js"></script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<title>Eports Website</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="google_translate_element"></div>
+					</div>
+					
+					<div class="col-sm-4">
+						<ul class="login-icon">
+							<li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+							<li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<h4 style="margin-top: 15px">Recovery Period Prediction for Orthopaedic Patients</h1>
+						<p>
+							Vedant Chaskar<br>
+							Suyash Shelar <br>
+							Archa Jadhav
+						</p>
+
+				</div>
+				
+
+
+			</div>
+		</div>
+
+		<nav>
+			<div class="container-fluid main_navbar" id="nav">
+
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+						  </ul>
+
+
+			</div>
+
+
+		</nav>
+	</header>
+
+
+
+
+
+
+	<div class="main">
+		<div class="container" id="Mumbai"><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job1.png" style="width: 180px;height: 180px"></div>
+				<div class="col-sm-8">
+					<h3>Floor Coordinator</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : 2-4 years<br>
+						<b>Qualifiaction</b> : MD<br>
+						<b>Working Hours</b> : 6-8 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Mumbai
+					</p>
+					
+				</div>
+				<div class="col-sm-1"><a href="{{ url_for('signup') }}" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job4.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Junior Medical Assistant</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : BMS<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Mumbai
+					</p>
+					
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="Jaipur"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job2.jpg" style="width: 200px;height: 200px;margin-left: 15px"></div>
+				<div class="col-sm-8">
+					<h3>Yoga Teacher</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BBA in Sports Management<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Jaipur
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job6.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Physical Education Teacher</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BSc(CS), MCA, BE/B.Tech(CSE), BEd, B.P.Ed, MSc(CS, Electronics, IT), Diploma, BCA<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place </b>: Jaipur
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="delhi"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job3.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Cardiologist</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : 7-8 years<br>
+						<b>Qualifiaction</b> : M.D.<br>
+						<b>Working Hours</b> : 5-8 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Delhi
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job4.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Junior Nurse</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : B.Sc. Nursing<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Delhi
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="container" id="Noida"></div><br>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job5.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Assistant Surgeon</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : Fresher<br>
+						<b>Qualifiaction</b> : M.B.B.S.<br>
+						<b>Working Hours</b> : 6-7 Hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place</b> : Noida
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3"><img src="static/images/job6.png" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-8">
+					<h3>Physiotherapist</h3>
+					<p style="font-size: 15px"><b>Employment Type</b> : Full Time&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Experience</b> : 2-3 years<br>
+						<b>Qualifiaction</b> : BPT<br>
+						<b>Working Hours</b> : 3-4 hours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<br><b>Place </b>: Noida
+					</p>
+				</div>
+				<div class="col-sm-1"><a href="" class="btn btn-info"><i class="fa fa-forward"></i></a></div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var nav = document.getElementById('nav');
+
+	window.onscroll = function () {
+
+		if (window.pageYOffset > 100) {
+
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+
+		} else {
+			// nav.style.position = "absolute";
+			nav.style.position = 'relative'; //fixed
+			nav.style.top = 100;
+		}
+	}
+
+
+</script>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

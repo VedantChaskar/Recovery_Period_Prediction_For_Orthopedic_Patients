@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/training.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+	<style type="text/css">
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+
+			top: 10;
+			left: 0;
+			overflow-x: hidden;
+			padding-left: 50px;
+
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: black;
+		}
+
+		.main {
+			margin-left: 200px;
+			/* Same as the width of the sidenav */
+			position: absolute;
+			z-index: -1;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+
+		.wrapper {
+			box-shadow: 1px 1px 1px 1px;
+			margin-top: 10px;
+			padding: 10px;
+
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+	</style>
+	<title>Eports Website</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="container-fluid top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div id="google_translate_element"></div>
+					</div>
+					
+					<div class="col-sm-4">
+						<ul class="login-icon">
+							<li style="border-right: 2px solid white"><a href=""><span class="fa fa-sign-in">&nbspLogin</span></a></li>
+							<li><a href=""><span class="fa fa-edit">&nbspRegister</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<h4 style="margin-top: 15px">Recovery Period Prediction For Orthopedic Patients</h1>
+						<p>
+							Vedant Chaskar<br>
+							Suyash Shelar<br>
+							Archa Jadhav
+						</p>
+
+				</div>
+				<div class="col-sm-6">
+					</div>
+
+
+			</div>
+		</div>
+
+		<nav>
+			<div class="container-fluid main_navbar" id="nav">
+
+					<ul class="main-icons">
+							<li class="active"><a href="{{ url_for('logout') }}">Back</a></li>
+						  </ul>
+
+
+			</div>
+
+
+		</nav>
+	</header>
+
+
+
+
+	
+	<style>
+		.checked {
+  color: orange;
+}
+</style>
+	<div class="main">
+		<div class="container-fluid" id="Haryana"><br>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital1.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Apollo Hospitals</h3>
+					<h6>Chennai,Tamil Nadu</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						1983
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Cardiology and Cardiothoracic Surgery
+						<br>
+						<b>Contact Us</b> : +91-44-2829-0200 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo" class="collapse">
+						<p>
+							Apollo Hospitals Chennai is a flagship hospital of Apollo Hospitals Enterprise Limited, one of the largest healthcare providers in Asia.
+It was established in 1983 by Dr. Prathap C. Reddy as the first corporate hospital in India.
+The hospital is located in the Greams Road area of Chennai, Tamil Nadu, India.
+Apollo Hospitals Chennai has over 60 departments and specialties and is equipped with advanced medical technology and equipment.
+The hospital has a capacity of over 1,000 beds and is staffed by over 5,500 healthcare professionals, including doctors, nurses, and support staff.
+Some of the specialties and subspecialties offered at Apollo Hospitals Chennai include Cardiology, Neurology, Orthopedics, Gastroenterology, Oncology, Nephrology, Pulmonology, Endocrinology, Dermatology, Ophthalmology, ENT, Obstetrics and Gynecology, Pediatrics, Psychiatry, Physical Medicine and Rehabilitation, and Critical Care Medicine.
+The hospital has a range of diagnostic and therapeutic services, including imaging, laboratory, and radiation therapy services, among others.
+Apollo Hospitals Chennai has been accredited by several international and national organizations, including Joint Commission International (JCI), National Accreditation Board for Hospitals and Healthcare Providers (NABH), and National Accreditation Board for Testing and Calibration Laboratories (NABL).
+The hospital is committed to providing patient-centered, evidence-based, and compassionate care to patients from all walks of life.	
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124389.21425369989!2d80.12298810948776!3d13.025293449653498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265fdfba01291%3A0x96156b77b1756463!2sApollo%20Hospital!5e0!3m2!1sen!2sin!4v1680980728330!5m2!1sen!2sin"  
+	
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital2.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Fortis Hospitals</h3>
+					<h6>Bangalore,Karnataka</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2006
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Neurology and Neurosurgery
+						<br>
+						<b>Contact Us</b> : +91-80-6621-4444 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo1" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo1" class="collapse">
+						<p>
+							Fortis Hospitals Bangalore is a large, multispecialty hospital located in Bannerghatta Road, Bangalore, Karnataka, India.
+The hospital is part of the Fortis Healthcare group, which is one of the leading healthcare providers in India.
+Fortis Hospitals Bangalore was established in 2006 and has since grown to become one of the premier healthcare facilities in Bangalore.
+The hospital has a capacity of over 276 beds and is staffed by over 150 experienced doctors and 1,000 healthcare professionals.
+Fortis Hospitals Bangalore is equipped with advanced medical technology and equipment, including a state-of-the-art cath lab, robotic surgery system, and advanced diagnostic and imaging facilities.
+The hospital offers a wide range of specialties and subspecialties, including cardiology, neurology, oncology, gastroenterology, orthopedics, urology, pulmonology, and many others.
+Fortis Hospitals Bangalore has a dedicated International Patient Services team that provides support and assistance to international patients seeking medical care in India.
+The hospital is accredited by several national and international organizations, including the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI).
+Fortis Hospitals Bangalore is committed to providing high-quality, patient-centered care and strives to maintain the highest standards of medical excellence, ethics, and professionalism.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2013855849373!2d77.59642641476981!3d12.894768390906338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15237055f411%3A0x7308c26631aa9e25!2sFortis%20Hospital%2C%20Bannerghatta%20Road!5e0!3m2!1sen!2sin!4v1680981238437!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital3.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Max Healthcare</h3>
+					<h6>New Delhi,Delhi</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2000
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Oncology and Cancer Care
+						<br>
+						<b>Contact Us</b> : +91-11-26515050 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo2" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo2" class="collapse">
+						<p>
+							Max Healthcare is a leading healthcare provider in India with a network of hospitals and medical centers across the country.
+The company was established in 2000 and has since grown rapidly, operating over 14 hospitals and medical centers in various cities across India, including Delhi, Mumbai, Dehradun, Bathinda, Mohali, and others.
+Max Healthcare is known for its world-class medical facilities, advanced technology, and highly experienced medical professionals. The hospitals offer a wide range of specialties and subspecialties, including cardiology, neurology, oncology, gastroenterology, orthopedics, urology, pulmonology, and many others.
+The hospitals are equipped with advanced medical technology and equipment, including state-of-the-art diagnostic and imaging facilities, robotic surgery systems, and other cutting-edge medical technologies.
+Max Healthcare is committed to providing high-quality, patient-centered care and strives to maintain the highest standards of medical excellence, ethics, and professionalism.
+The hospital is known for its patient-centric approach and offers a range of services to ensure that patients and their families feel comfortable and cared for during their stay at the hospital. These services include personalized care, patient education, counseling, and other support services.
+Max Healthcare has a dedicated International Patient Services team that provides support and assistance to international patients seeking medical care in India.
+The hospital is accredited by several national and international organizations, including the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI).
+Max Healthcare has won several awards and recognitions for its excellence in healthcare delivery, including the 'Best Hospital Chain of the Year' award at the Economic Times Healthcare Awards, 2020.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.404836255802!2d77.20980591503393!3d28.527548982459326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1f427d4c5fb%3A0x582d47bbf4970bc1!2sMax%20Super%20Speciality%20Hospital%2C%20Saket%20(Max%20Saket)!5e0!3m2!1sen!2sin!4v1680981840023!5m2!1sen!2sin" 
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital4.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Sir Ganga Ram Hospital, </h3>
+					<h6>Delhi NCR,Delhi</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						1954
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Orthopedics
+						<br>
+						<b>Contact Us</b> : +91-11-25750000 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo3" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo3" class="collapse">
+						<p>
+							Sir Ganga Ram Hospital is a multi-specialty hospital located in New Delhi, India. It was founded in 1954 by Sir Ganga Ram, a renowned civil engineer and philanthropist.
+The hospital has a capacity of over 650 beds and offers a wide range of medical specialties and subspecialties, including cardiology, neurology, oncology, gastroenterology, orthopedics, urology, pulmonology, and many others.
+The hospital is equipped with state-of-the-art medical facilities and technology, including advanced diagnostic and imaging services, a fully-equipped intensive care unit (ICU), and a modern operation theatre complex.
+The hospital has a team of over 400 highly qualified and experienced doctors and surgeons who are dedicated to providing the best possible medical care to their patients.
+Sir Ganga Ram Hospital is committed to providing patient-centered care and has a reputation for excellence in healthcare delivery. The hospital has won several awards and recognitions for its quality of care, including the 'Best Multi-Specialty Hospital' award at the India Today Healthgiri Awards, 2020.
+The hospital also has a research and development center, which is engaged in the development of new medical technologies and treatment protocols.
+Sir Ganga Ram Hospital is accredited by several national and international organizations, including the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI).
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25895.049778688513!2d77.19045607689797!3d28.640923613211438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02a17c4ab835%3A0xecd838535c0fa0f6!2sSir%20Ganga%20Ram%20Hospital!5e0!3m2!1sen!2sin!4v1680983008939!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital5.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Manipal Hospitals</h3>
+					<h6>Bangalore,Karnataka</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						1991
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Urology
+						<br>
+						<b>Contact Us</b> : +91-80-2502-4444 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo4" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo4" class="collapse">
+						<p>
+							Manipal Hospitals in Bangalore is a part of the Manipal Health Enterprises group, which is a leading healthcare provider in India. The hospital was established in the year 1991 and is located in the Old Airport Road area of Bangalore.
+The hospital has a capacity of over 600 beds and is equipped with state-of-the-art medical facilities and technology, including advanced diagnostic and imaging services, a fully-equipped intensive care unit (ICU), and a modern operation theatre complex.
+The hospital offers a wide range of medical specialties and subspecialties, including cardiology, oncology, neurology, gastroenterology, orthopedics, urology, pulmonology, nephrology, endocrinology, rheumatology, dermatology, ophthalmology, ENT (Ear, Nose, and Throat), pediatrics, obstetrics and gynecology, general surgery, plastic surgery, neurosurgery, and cardiothoracic surgery.
+The hospital also has specialized centers of excellence, such as the Comprehensive Cancer Care Center, the Center for Bone and Joint Care, the Center for Digestive and Liver Diseases, the Center for Neurosciences, and the Center for Robotic Surgery, among others.
+Manipal Hospitals in Bangalore is known for its advanced medical facilities and equipment, and its team of highly qualified and experienced medical professionals are dedicated to providing the best possible medical care to their patients.
+The hospital is accredited by several national and international organizations, including the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI).
+Manipal Hospitals in Bangalore also has a strong focus on research and education. The hospital has a research and development center and is affiliated with the Manipal Academy of Higher Education, which is a leading educational institution in India.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2102958317737!2d77.64664771477047!3d12.958391090864556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13c0c0c6206b%3A0x12d8d4c39197c7dd!2sManipal%20Hospital!5e0!3m2!1sen!2sin!4v1680983629757!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital6.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Medanta- The Medicity</h3>
+					<h6>Gurgaon,Haryana</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2009
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Orthopedics and Joint Replacement
+						<br>
+						<b>Contact Us</b> : +91-124-4141414 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo5" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo5" class="collapse">
+						<p>
+							Medanta - The Medicity is a renowned multi-specialty hospital located in Gurgaon, a city in the National Capital Region (NCR) of India. The hospital was established in 2009 by Dr. Naresh Trehan, a renowned cardiovascular and cardiothoracic surgeon, with the aim of providing world-class medical care to patients in India and from around the world.
+
+							The hospital has over 1,600 beds, making it one of the largest private hospitals in India. It is equipped with state-of-the-art medical facilities and technology, including advanced imaging and diagnostic equipment, robotic surgery, and minimally invasive surgical techniques. The hospital has a team of over 2,000 medical professionals, including doctors, nurses, and support staff, who are dedicated to providing the highest quality of medical care to their patients.
+							
+							In addition to its world-class medical facilities, Medanta - The Medicity also offers a range of support services, such as accommodation for patients and their families, food and dietary services, travel and logistics support, and language interpretation services.
+							
+							The hospital is known for its specialized centers of excellence, such as the Heart Institute, Cancer Institute, Institute of Neurosciences, Bone and Joint Institute, Institute of Digestive and Hepatobiliary Sciences, and Institute of Critical Care and Anesthesiology, among others. These centers offer specialized care and treatment for a wide range of medical conditions.
+							Medanta - The Medicity has received numerous awards and recognitions for its outstanding medical services and facilities. It is accredited by the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI), which are recognized as the gold standards in healthcare accreditation.	
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54217.75019830416!2d77.03875846107084!3d28.43841982408431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d186ec89f751b%3A0xdc2ab32fc4675cac!2sMedanta%20-%20The%20Medicity!5e0!3m2!1sen!2sin!4v1680984188886!5m2!1sen!2sin" 
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital7.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Kokilaben Dhirubhai Ambani Hospital</h3>
+					<h6>Mumbai, Maharashtra</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2006
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Nephrology and Kidney Transplantation
+						<br>
+						<b>Contact Us</b> : +91-22-3099-9999 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo6" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo6" class="collapse">
+						<p>
+							Kokilaben Dhirubhai Ambani Hospital is a multi-specialty hospital located in Mumbai, India. It was established in the year 2006 and is named after Kokilaben Dhirubhai Ambani, the wife of the late Dhirubhai Ambani, founder of Reliance Industries.
+
+The hospital is spread over an area of 1,87,000 square feet and has 750 beds. It is equipped with state-of-the-art medical facilities and technologies, including advanced imaging and diagnostic equipment, operation theatres, and critical care units.
+
+The hospital has a team of highly qualified and experienced medical professionals, including doctors, nurses, and support staff, who are committed to providing the best possible medical care to their patients. The hospital's patient-centric approach and focus on personalized care have earned it a reputation as one of the leading healthcare institutions in India.
+
+Apart from its advanced medical facilities and equipment, the hospital also offers a range of ancillary services, including pharmacy, laboratory, blood bank, and ambulance services.
+
+Kokilaben Dhirubhai Ambani Hospital is accredited by the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI), which are among the most prestigious healthcare accreditation bodies in the world.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4617636289836!2d72.82287491485216!3d19.13125418705617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61ed7e04c69%3A0x3860c51257a72c24!2sKokilaben%20Dhirubhai%20Ambani%20Hospital%20and%20Medical%20Research%20Institute!5e0!3m2!1sen!2sin!4v1680984455849!5m2!1sen!2sin" 
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital8.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Artemis Hospitals</h3>
+					<h6>Gurgaon,Haryana</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2007
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Pulmonology and Sleep Medicine
+						<br>
+						<b>Contact Us</b> : +91-124-6767-676 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo7" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo7" class="collapse">
+						<p>
+							Artemis Hospitals is a multi-specialty hospital located in Gurgaon, India. The hospital was established in 2007 by Dr. Devi Shetty, a renowned cardiac surgeon and founder of Narayana Health.
+
+The hospital is spread across a sprawling 9-acre campus and has 380 beds. It has more than 600 full-time doctors and 300 visiting consultants who provide medical care in various specialties and subspecialties. Artemis Hospitals has an international patient department that caters to the needs of patients from different parts of the world.
+
+The hospital has state-of-the-art medical facilities and technologies, including advanced imaging and diagnostic equipment, operation theatres, and critical care units. It also has a blood bank, pharmacy, and laboratory services to support its medical services.
+
+Artemis Hospitals is known for its specialized medical services, including cardiology and cardiothoracic surgery, oncology and cancer surgery, neurology and neurosurgery, gastroenterology and hepatology, orthopedics and joint replacement, nephrology and kidney transplantation, pulmonology and sleep medicine, endocrinology and diabetes, rheumatology, dermatology, ophthalmology, ENT, pediatrics and neonatology, obstetrics and gynecology, general surgery, plastic and reconstructive surgery, urology and andrology, transfusion medicine, and blood bank services.
+The hospital is accredited by the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI), which are among the most prestigious healthcare accreditation bodies in the world. The hospital has won numerous awards and recognitions for its excellence in healthcare delivery and patient safety.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.5871033831504!2d77.0701910150317!3d28.431713182497504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1883aaaaaaab%3A0x404085140375fa28!2sArtemis%20Hospital%20Gurgaon!5e0!3m2!1sen!2sin!4v1680984664153!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital9.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Hinduja Hospital</h3>
+					<h6>Mumbai,Maharashtra</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						1951
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Endocrinology and Diabetes
+						<br>
+						<b>Contact Us</b> : +91-22-2445-1515 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo8" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo8" class="collapse">
+						<p>
+							Location: Hinduja Hospital is located in Mahim, a suburb of Mumbai, India. The hospital is easily accessible by public transportation and is located near several major landmarks in the city.
+
+History: Hinduja Hospital was founded in 1951 by the Hinduja brothers, a prominent business family in India. The hospital was initially a small clinic and has since grown into a large, multi-specialty hospital with a reputation for providing high-quality healthcare services.
+
+Infrastructure: Hinduja Hospital has a state-of-the-art infrastructure that includes advanced medical equipment, modern operation theaters, and a range of medical and diagnostic services. The hospital has 350 beds, including 53 critical care beds, and offers a range of inpatient and outpatient services.
+
+Medical services: Hinduja Hospital offers a wide range of medical services in various specialties, including cardiology and cardiothoracic surgery, neurology and neurosurgery, oncology and cancer surgery, nephrology and kidney transplantation, gastroenterology and hepatology, orthopedics and joint replacement, pulmonology and sleep medicine, endocrinology and diabetes, ophthalmology, dermatology, ENT, pediatrics and neonatology, obstetrics and gynecology, and general surgery.
+
+Technology: Hinduja Hospital is known for its use of advanced medical technologies and equipment. The hospital has invested heavily in the latest medical equipment and uses advanced diagnostic tools and treatment techniques to ensure the best possible outcomes for patients.
+
+Research: Hinduja Hospital has a strong focus on research and innovation. The hospital has a dedicated research center that conducts clinical research in various specialties, including cardiology, oncology, and neurology. The hospital also collaborates with leading academic institutions and research organizations to advance medical knowledge and improve patient outcomes.
+
+Awards and recognition: Hinduja Hospital has won numerous awards and recognition for its excellence in healthcare delivery and patient safety. The hospital has been accredited by the National Accreditation Board for Hospitals and Healthcare Providers (NABH) and the Joint Commission International (JCI).
+
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.694108263861!2d72.83691331485068!3d19.033196187112484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cecd7ac1a085%3A0xf73352cc410cb205!2sHinduja%20Hospital%20OPD%20Building!5e0!3m2!1sen!2sin!4v1680984954732!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>			<div class="row wrapper">
+				<div class="col-sm-3" style="overflow: hidden; margin-top: 12px;"><img src="static/images/hospital10.jpg" style="width: 200px;height: 200px"></div>
+				<div class="col-sm-5">
+					<h3>Narayana Health</h3>
+					<h6>Bangalore,Karnataka</h6>
+					<div style="font-size: 15px"><b>Established:</b> :
+						2000
+						<p style="font-size: 15px"><b>Rating:</b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						</div>
+						<b>Specialization</b> :
+						Pediatrics and Neonatology
+						<br>
+						<b>Contact Us</b> : +91-80-7122-2222 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b></b>
+					</p><a href="#demo9" class="btn btn-info" data-toggle="collapse">Details</a>
+					<div id="demo9" class="collapse">
+						<p>
+							Narayana Health is a leading healthcare provider in India that operates a network of hospitals and healthcare facilities across the country. The hospital was founded in 2000 in Bangalore, Karnataka by Dr. Devi Prasad Shetty, a renowned cardiac surgeon and healthcare entrepreneur.
+
+Narayana Health is committed to providing high-quality healthcare services to patients at an affordable cost. The hospital has a team of highly qualified and experienced doctors, nurses, and other healthcare professionals who use the latest medical technology and equipment to provide advanced medical care to patients.
+
+The hospital offers a wide range of medical services across multiple specialties, including cardiology and cardiothoracic surgery, neurology and neurosurgery, oncology and cancer surgery, nephrology and kidney transplantation, gastroenterology and hepatology, orthopedics and joint replacement, pulmonology and sleep medicine, endocrinology and diabetes, ophthalmology, dermatology, ENT, pediatrics and neonatology, obstetrics and gynecology, and general surgery.
+
+Narayana Health has won several awards and recognitions for its outstanding contributions to the healthcare industry. The hospital has been recognized for its commitment to patient care, clinical excellence, and innovation in medical technology and processes.
+
+Narayana Health is known for its patient-centric approach to healthcare, and the hospital strives to make the patient experience as comfortable and convenient as possible. The hospital has a range of facilities and amenities, including comfortable patient rooms, 24/7 pharmacy services, cafeteria, and more.
+	
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p style="font-size: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.5268240434334!2d77.69290841476885!3d12.80919679096257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d92c697eb31%3A0x77ddda80dabce1ec!2sNarayana%20Health%20City!5e0!3m2!1sen!2sin!4v1680985202567!5m2!1sen!2sin"
+						 width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+		
+
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var nav = document.getElementById('nav');
+
+	window.onscroll = function () {
+
+		if (window.pageYOffset > 100) {
+
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+
+		} else {
+			// nav.style.position = "absolute";
+			nav.style.position = 'relative'; //fixed
+			nav.style.top = 100;
+		}
+	}
+
+
+</script>
+
+
+<script src="static/javascript/jquery.js"></script>
+<script src="static/javascript/bootstrap.min.js"></script>
+
+</html>

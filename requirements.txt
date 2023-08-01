@@ -1,0 +1,6 @@
+sklearn
+Flask~=2.2.3
+matplotlib
+numpy
+
+SQLAlchemy~=2.0.8
